@@ -24,6 +24,11 @@ body {
   margin-bottom: 20px;
 }
 
+.js-greeting {
+  all: unset;
+  border-bottom: 3px solid white;
+}
+
 .js-greeting,
 .title,
 .toDoInput {
