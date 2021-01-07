@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1s linear;
 }
 
 .header {
@@ -66,6 +67,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 
 .js-clock {
@@ -101,4 +103,13 @@ input::placeholder {
 
 .toDoList li span {
   margin-right: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

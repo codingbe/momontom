@@ -45,7 +45,9 @@ const body = document.querySelector("body");
 
 const randomBackground = () => {
   const random = Math.floor(Math.random() * parseInt(image.length));
-  body.style.background = `url(${image[random].link}) no-repeat center center fixed`;
+  const img = document.createElement("img");
+  img.setAttribute("src", image[random].link);
+  body.prepend(img);
 };
 
 function init() {
